@@ -1,0 +1,9 @@
+version: "3"
+services:
+  primenumber:
+    build: .
+    image: primenumber
+    container_name: primenumber
+    restart: unless-stopped
+    ports:
+      - 80:8080
