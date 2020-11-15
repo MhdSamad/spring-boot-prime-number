@@ -1,3 +1,4 @@
+
 package com.springsample.primenumber;
 
 import org.springframework.boot.SpringApplication;

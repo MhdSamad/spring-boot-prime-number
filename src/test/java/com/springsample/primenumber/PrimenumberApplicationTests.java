@@ -1,3 +1,4 @@
+
 package com.springsample.primenumber;
 
 import org.junit.jupiter.api.Test;

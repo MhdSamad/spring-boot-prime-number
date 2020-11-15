@@ -1,3 +1,4 @@
+
 package com.springsample.primenumber.service;
 
 import org.springframework.stereotype.Service;
@@ -30,5 +31,5 @@ public class PrimeNumberService {
     return true;
 
   }
-  
+
 }

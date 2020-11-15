@@ -1,3 +1,4 @@
+
 package com.springsample.primenumber.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import com.springsample.primenumber.service.PrimeNumberService;
 public class PrimeNumberController {
 
   private final PrimeNumberService primeNumberService;
-  
+
   @Autowired
   public PrimeNumberController(PrimeNumberService primeNumberService) {
 
