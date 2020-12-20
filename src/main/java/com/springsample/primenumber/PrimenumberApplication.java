@@ -11,7 +11,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class PrimeNumberApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(PrimeNumberApplication.class, args);
+
 	}
 
 }

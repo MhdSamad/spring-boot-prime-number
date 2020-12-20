@@ -13,14 +13,8 @@ import com.springsample.primenumber.service.PrimeNumberService;
 @RequestMapping("/api/primenumber")
 public class PrimeNumberController {
 
-  private final PrimeNumberService primeNumberService;
-
   @Autowired
-  public PrimeNumberController(PrimeNumberService primeNumberService) {
-
-    this.primeNumberService = primeNumberService;
-
-  }
+  private PrimeNumberService primeNumberService;
 
   @GetMapping("/{num}")
   public ResponseEntity<String> checkPrimeNumber(@PathVariable("num") int num) {

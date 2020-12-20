@@ -9,6 +9,7 @@ class PrimeNumberApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
