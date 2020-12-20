@@ -2,6 +2,7 @@
 package com.springsample.primenumber.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,9 @@ import com.springsample.primenumber.service.PrimeNumberService;
 @RestController
 @RequestMapping("/api/primenumber")
 public class PrimeNumberController {
+
+  @Value("${outerValue}")
+  private String outerValue;
 
   @Autowired
   private PrimeNumberService primeNumberService;
@@ -25,7 +29,8 @@ public class PrimeNumberController {
 
     boolean isPrimeNumber = primeNumberService.isPrimeNumber(num);
 
-    String response = String.format("<h1>%d is%s a prime number</h1>", num, (isPrimeNumber ? "" : " not"));
+    String response = String.format("<h1>%d is%s a prime number</h1> %s", num, (isPrimeNumber ? "" : " not"),
+        outerValue);
 
     return new ResponseEntity<>(response, HttpStatus.OK);
 
